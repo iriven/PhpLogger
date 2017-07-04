@@ -30,7 +30,7 @@ trait LogSetupManagerTrait
             'rotate'        => true,
             'granularity'   => 'month',
             'timezone'      => 'Europe/Paris',
-            'type'          => 'Events'
+            'type'          => 'Syslog'
         ];
         $AcceptedOptions = array_diff_key(array_keys($default), ['extension'=>false]);
         $AcceptedGranularities =['day','week','month','year'];
@@ -44,7 +44,7 @@ trait LogSetupManagerTrait
         endforeach;
         $Setup = [
             'channel'       => isset($config['channel'])? $config['channel']:null,
-            'directory'     => isset($config['directory'])? pathinfo($config['directory'],PATHINFO_DIRNAME):null,
+            'directory'     => isset($config['directory'])?(is_file($config['directory'])? pathinfo($config['directory'],PATHINFO_DIRNAME):$config['directory']):null,
             'filename'      => isset($config['filename'])? pathinfo($config['filename'],PATHINFO_FILENAME):null,
             'granularity'   => (isset($config['granularity']) and in_array($config['granularity'], $AcceptedGranularities ,false))? strtolower($config['granularity']):null,
             'level'         => (isset($config['level']) and in_array($config['level'], array_keys($this->LEVELS),false))? trim(strtolower($config['level'])):null,
