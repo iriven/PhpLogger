@@ -92,7 +92,24 @@ By default all log levels are logged. The minimum log level can be changed in tw
 // Setter method (Only warning and above are logged)
 $logger->setLevel(LogLevel::WARNING);
 ```
+### Log Channels
+Think of channels as namespaces for log lines. If you want to have multiple loggers or applications logging to a single log file, channels are your friend.
 
+Channels can be set in two ways:
+ * Constructor parameter
+ * Setter method at any time
+```php
+// Setter method
+$logger->setChannel('database');
+```
+### Debug Features
+#### Logging to STDOUT
+When developing, you can turn on log output to the screen (STDOUT) as a convenience.
+
+```php
+$logger->setOutput(true);
+$logger->debug('This will get logged to STDOUT as well as the log file.');
+```
 ## Authors
 
 * **Alfred TCHONDJO** - *Project Initiator* - [iriven France](https://www.facebook.com/Tchalf)
