@@ -52,10 +52,10 @@ $Config = [
 ```php
 $Event = new \IrivenPHPEvents\Logger($Config);
 $Event->info('Event Handler',[
-                                                'Ip'=>$this->request()->getClientIp(),
-                                                'HttpMethod'=>$this->request()->getMethod(),
-                                                'Url'=>$this->request()->getUri(),
-                                                'Referer'=>$this->request()->headers->get('referer',null)
+                                                'Ip'=>$_SERVER['REMOTE_ADDR'],
+                                                'HttpMethod'=>$_SERVER['REQUEST_METHOD'],
+                                                'Url'=>$_SERVER['REQUEST_URI'],
+                                                'Referer'=>$_SERVER['HTTP_REFERER']?:null
                                             ]);
 ```
 
