@@ -6,8 +6,8 @@
  * Time: 08:50
  */
 
-namespace Events\Core\Utils;
-use Events\Core\LogLevel;
+namespace IrivenPHPEvents\Core\Utils;
+use IrivenPHPEvents\Core\LogLevel;
 
 trait LogMessageBuilderTrait
 {
