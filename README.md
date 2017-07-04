@@ -58,6 +58,35 @@ $logger->info('Event Handler',[
                                                 'Referer'=>$_SERVER['HTTP_REFERER']?:null
                                             ]);
 ```
+That's it! Your application is logging!
+
+
+### Log Output
+Log lines have the following format:
+```
+YYYY-mm-dd HH:ii:ss.uuuuuu  [loglevel]  [channel]  [pid:##]  Log message content  {"Optional":"JSON Contextual Support Data"}  {"Optional":"Exception Data"}
+```
+
+Log lines are easily readable and parsable. Log lines are always on a single line. Fields are tab separated.
+
+### Log Levels
+
+PhpLogger has eight log level severities based on [PSR Log Levels](http://www.php-fig.org/psr/psr-3/#psrlogloglevel).
+
+```php
+$logger->debug('Detailed information about the application run.');
+$logger->info('Informational messages about the application run.');
+$logger->notice('Normal but significant events.');
+$logger->warning('Information that something potentially bad has occured.');
+$logger->error('Runtime error that should be monitored.');
+$logger->critical('A service is unavailable or unresponsive.');
+$logger->alert('The entire site is down.');
+$logger->emergency('The Web site is on fire.');
+```
+
+By default all log levels are logged. The minimum log level can be changed in two ways:
+ * Optional constructor parameter
+ * Setter method at any time
 
 ## Authors
 
