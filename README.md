@@ -36,9 +36,9 @@ require_once 'Logger.php';
 
 ```php
 $Config = [
-            'filename'      => 'messages',
             'channel'       => 'Tracking',
             'level'         => 'debug',
+            'filename'      => 'messages',
             'directory'     => __DIR__.DIRECTORY_SEPARATOR.'PhpLogger',
             'stdout'        => false,
             'rotate'        => true, 		//allow log rotation
