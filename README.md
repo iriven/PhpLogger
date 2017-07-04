@@ -9,6 +9,50 @@ It contributes to compliance with current security policies and regulations.
 
 ### ( Documentation En Cours )
 
+## Features
+
+ * Power and Simplicity
+ * PSR-3 logger interface
+ * Multiple log level severities
+ * Log channels
+ * Process ID logging
+ * Custom log messages
+ * Custom contextual data
+ * Exception logging
+
+## Usage:
+
+### Installation And Initialisation
+
+To utilize PhpLogger, first import and require Logger.php file in your project.
+
+##### Installation
+```php
+require_once 'Logger.php';
+```
+
+
+##### Setup (example)
+
+```php
+$Config = [
+            'filename'      => 'messages',
+            'extension'     => '.log',
+            'channel'       => 'Tracking',
+            'level'         => 'debug',
+            'directory'     => __DIR__.DIRECTORY_SEPARATOR.'PhpLogger',
+            'stdout'        => false,
+            'rotate'        => true, 		//allow log rotation
+            'granularity'   => 'month', 	//logs rotate frequency (values: day, week, month, year)
+            'timezone'      => 'Europe/Paris',
+            'type'          => 'Syslog'
+        ];
+```
+##### Initialisation
+
+```php
+$Event = new \IrivenPhpEvents\Logger($Config);
+```
 
 ## Authors
 
