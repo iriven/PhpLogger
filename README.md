@@ -51,7 +51,7 @@ $Config = [
 ##### Initialisation
 
 ```php
-$Event = new \IrivenPhpEvents\Logger($Config);
+$Event = new \IrivenPHPEvents\Logger($Config);
 ```
 
 ## Authors
