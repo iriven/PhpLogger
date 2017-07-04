@@ -6,7 +6,7 @@
  * Time: 15:00
  */
 
-namespace Events\Core;
+namespace IrivenPHPEvents\Core;
 
 /**
  * Describes log levels
