@@ -51,7 +51,7 @@ $Config = [
 
 ```php
 $logger = new \IrivenPHPEvents\Logger($Config);
-$Event->info('Event Handler',[
+$logger->info('Event Handler',[
                                                 'Ip'=>$_SERVER['REMOTE_ADDR'],
                                                 'HttpMethod'=>$_SERVER['REQUEST_METHOD'],
                                                 'Url'=>$_SERVER['REQUEST_URI'],
