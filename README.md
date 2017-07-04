@@ -90,7 +90,7 @@ By default all log levels are logged. The minimum log level can be changed in tw
 
 ```php
 // Setter method (Only warning and above are logged)
-$logger->setLogLevel(LogLevel::WARNING);
+$logger->setLevel(LogLevel::WARNING);
 ```
 
 ## Authors
