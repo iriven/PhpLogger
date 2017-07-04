@@ -110,6 +110,13 @@ When developing, you can turn on log output to the screen (STDOUT) as a convenie
 $logger->setOutput(true);
 $logger->debug('This will get logged to STDOUT as well as the log file.');
 ```
+## Standards
+
+SimpleLog conforms to the following standards:
+
+ * PSR-3 - Logger Interface (http://www.php-fig.org/psr/psr-3/)
+ 
+
 ## Authors
 
 * **Alfred TCHONDJO** - *Project Initiator* - [iriven France](https://www.facebook.com/Tchalf)
