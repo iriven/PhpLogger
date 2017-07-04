@@ -23,14 +23,14 @@ trait LogSetupManagerTrait
         $default = [
             'filename'      => 'messages',
             'extension'     => '.log',
-            'channel'       => 'events tracking',
+            'channel'       => 'Tracking',
             'level'         => LogLevel::DEBUG,
             'directory'     => (pathinfo(ini_get('error_log'),PATHINFO_DIRNAME)?:__DIR__).DIRECTORY_SEPARATOR.'PhpLogger',
             'stdout'        => false,
             'rotate'        => true,
             'granularity'   => 'month',
             'timezone'      => 'Europe/Paris',
-            'type'          => 'syslog'
+            'type'          => 'Events'
         ];
         $AcceptedOptions = array_diff_key(array_keys($default), ['extension'=>false]);
         $AcceptedGranularities =['day','week','month','year'];
