@@ -25,7 +25,7 @@ trait LogSetupManagerTrait
             'extension'     => '.log',
             'channel'       => 'events tracking',
             'level'         => LogLevel::DEBUG,
-            'directory'     => pathinfo(ini_get('error_log'),PATHINFO_DIRNAME)?:__DIR__.DIRECTORY_SEPARATOR.'Logs',
+            'directory'     => (pathinfo(ini_get('error_log'),PATHINFO_DIRNAME)?:__DIR__).DIRECTORY_SEPARATOR.'PhpLogger',
             'stdout'        => false,
             'rotate'        => true,
             'granularity'   => 'month',
