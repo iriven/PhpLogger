@@ -23,7 +23,6 @@ It contributes to compliance with current security policies and regulations.
 ```php
 $Config = [
             'filename'      => 'messages',
-            'extension'     => '.log',
             'channel'       => 'Tracking',
             'level'         => 'debug',
             'directory'     => __DIR__.DIRECTORY_SEPARATOR.'PhpLogger',
