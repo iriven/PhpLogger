@@ -40,7 +40,7 @@ $Config = [
             'level'         => 'debug',
             'filename'      => 'messages',
             'directory'     => __DIR__.DIRECTORY_SEPARATOR.'PhpLogger',
-            'stdout'        => false,
+            'stdout'        => false,           // display logs on screen or not (values: false, true)
             'rotate'        => true, 		//allow log rotation
             'granularity'   => 'month', 	//logs rotate frequency (values: day, week, month, year)
             'timezone'      => 'Europe/Paris',
@@ -51,6 +51,12 @@ $Config = [
 
 ```php
 $Event = new \IrivenPHPEvents\Logger($Config);
+$Event->info('Event Handler',[
+                                                'Ip'=>$this->request()->getClientIp(),
+                                                'HttpMethod'=>$this->request()->getMethod(),
+                                                'Url'=>$this->request()->getUri(),
+                                                'Referer'=>$this->request()->headers->get('referer',null)
+                                            ]);
 ```
 
 ## Authors
