@@ -6,7 +6,7 @@
  * Time: 14:55
  */
 
-namespace Events\Interfaces;
+namespace IrivenPHPEvents\Interfaces;
 
 
 interface LoggerInterface
