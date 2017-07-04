@@ -6,9 +6,9 @@
  * Time: 11:06
  */
 
-namespace Events\Core\Utils;
+namespace IrivenPHPEvents\Core\Utils;
 
-use Events\Core\LogLevel;
+use IrivenPHPEvents\Core\LogLevel;
 
 trait LogSetupManagerTrait
 {
