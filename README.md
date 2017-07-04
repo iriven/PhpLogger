@@ -6,7 +6,34 @@ Logging is undoubtedly the discreet hero of the world of computer security.
 With [Iriven Php Logger](https://github.com/iriven/PhpLogger) you have the possibility to keep a complete record of your application users's activities .
 It contributes to compliance with current security policies and regulations.
 
+## Features
 
+ * Power and Simplicity
+ * PSR-3 logger interface
+ * Multiple log level severities
+ * Log channels
+ * Process ID logging
+ * Custom log messages
+ * Custom contextual data
+ * Exception logging
+
+## Setup (example)
+
+
+```php
+$Config = [
+            'filename'      => 'messages',
+            'extension'     => '.log',
+            'channel'       => 'Tracking',
+            'level'         => 'debug',
+            'directory'     => __DIR__.DIRECTORY_SEPARATOR.'PhpLogger',
+            'stdout'        => false,
+            'rotate'        => true,
+            'granularity'   => 'month',
+            'timezone'      => 'Europe/Paris',
+            'type'          => 'Syslog'
+        ];
+```
 
 ### ( Documentation En Cours )
 
