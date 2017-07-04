@@ -37,7 +37,7 @@ require_once 'Logger.php';
 ```php
 $Config = [
             'channel'       => 'Tracking',
-            'level'         => 'debug',
+            'level'         => 'debug', // log severity (values: debug, info, notice, warning, error, critical, alert, emergency)
             'filename'      => 'messages',
             'directory'     => __DIR__.DIRECTORY_SEPARATOR.'PhpLogger',
             'stdout'        => false,           // display logs on screen or not (values: false, true)
