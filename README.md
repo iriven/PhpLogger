@@ -6,9 +6,6 @@ Logging is undoubtedly the discreet hero of the world of computer security.
 With [Iriven Php Logger](https://github.com/iriven/PhpLogger) you have the possibility to keep a complete record of your application users's activities .
 It contributes to compliance with current security policies and regulations.
 
-
-### ( Documentation En Cours )
-
 ## Features
 
  * Power and Simplicity
