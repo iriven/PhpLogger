@@ -1,6 +1,5 @@
 # Iriven Php Logger
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XDCFPNTKUC4TU)
-[![Build Status](https://travis-ci.org/iriven/PhpLogger.svg?branch=master)](https://travis-ci.org/iriven/PhpLogger)
 
 [Iriven Php Logger:](https://github.com/iriven/PhpLogger) a powerful logging system developed according to PSR-3 standards.
 Logging is undoubtedly the discreet hero of the world of computer security.
